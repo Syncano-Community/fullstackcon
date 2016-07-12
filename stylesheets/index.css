@@ -1,0 +1,56 @@
+/* General */
+h1, h2, h3, h4, h5, h6 {
+  padding: 0.5em 1em 0.5em 1em;
+}
+
+ol li {
+  padding-right: 2em;
+}
+
+/* Header */
+#syncanoLogo {
+  padding: 0.2em 1em 0 1em;
+  max-height: 1em;
+}
+
+#navTitle {
+  padding-right: 1em;
+  font-size: large;
+}
+
+.nav-wrapper {
+  /*background-color: rgb(91,142,221);*/
+  background-color: rgb(52,71,112);
+}
+
+/* Main Body */
+.minihacks {
+  width: 90%;
+  margin: 0% 5%;
+}
+
+.collapsible-header {
+  transition: all 0.2s;
+}
+
+.collapsible-header.active {
+  color: white;
+  /*background-color: rgb(52,71,112);*/
+  background-color: rgb(91,142,221);
+}
+
+.content {
+  min-height: 500px;
+}
+
+.user-input {
+  margin: 5%;
+  width: 90%;
+}
+
+.upvote {
+  vertical-align: center;
+  font-size: 16px;
+  margin: 0px 5px;
+  cursor: pointer;
+}
