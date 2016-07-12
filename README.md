@@ -3,7 +3,7 @@ This is the subject of the "5 Minute Backend with Node and Syncano" Lightning Ta
 
 To complete the exercise, follow the steps below:
 
-1. Sign up for a [Syncano Account](https://www.syncano.io/).
+1. Sign up for a [Syncano Account](https://bit.ly/fullstackcon-signup).
 2. Clone this repo: `git clone https://github.com/syncano-community/syncano-fullstackcon.git`
 3. Point your browser to the `index.html` file included in the repo.
 4. In another tab, navigate to your Syncano Dashboard. 
