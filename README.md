@@ -11,7 +11,7 @@ To complete the exercise, follow the steps below:
 6. Copy your Syncano Account Key by clicking on the profile picture at the top right corner of your Syncano Dashboard and selecting "Copy Account Key".
 7. Go to the tab with your `index.html` file open and click "Link Account". Paste your Account Key into the space provided and enter your Instance Name. Submit to link your account.
 8. In your Syncano Dashboard, create a new class called `news_item`. For the schema, give it a `title` (string), `url` (string), and `upvotes` (integer).
-9. Create 3 News Item Data Objects either in your Syncano Dashboard or by selecting the 'Add a News Item` link in your `index.html` file.
+9. Create 3 News Item Data Objects either in your Syncano Dashboard or by selecting the "Add a News Item" link in your `index.html` file.
 10. Upvote some of the News Items. Notice how the order changes accordingly.
 11. Create another News Item titled `should delete` and give it whatever url you want. Don't upvote it.
 12. Navigate back to your Syncano Dashboard and create a new Script by selecting "Scripts" in the left nav. Label the Script `news_item_clean_up` and select `NodeJS (latest v 1.0)` as the runtime.
@@ -31,7 +31,7 @@ To complete the exercise, follow the steps below:
         });    
     });
     ```
-14. Set your CONFIG variables on the right. You will need one for `accountKey` (string), `instanceName` (string), and `className` (string). Fill in your `accountKey` and `instanceName` and use `news_item` for the `className`. Click the blue "Save" button at the top.
+14. Set your CONFIG variables on the right. You will need one for `accountKey` (string), `instanceName` (string), and `className` (string). Fill in your `accountKey` and `instanceName` and use "news_item" for the `className`. Click the blue "Save" button at the top.
 15. Click the blue "Run" button at the top.
 16. Navigate back to your `index.html` file. The "should delete" News Item should be gone.
 17. Read more about what Syncano can do in the [docs](http://docs.syncano.io/).
