@@ -25,7 +25,7 @@ function connectAccount() {
 
 	if (accountKey && instanceName) {
 		connection = new Syncano({accountKey: accountKey});
-		$('#account-message').text('Account succesfully linked!');
+		$('#account-message').text('Account successfully linked!');
 		localStorage.accountKey = accountKey;
 		localStorage.instanceName = instanceName;
 	} else {
