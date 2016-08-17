@@ -1,13 +1,13 @@
-var connection, accountKey, instanceName;
+var connection, apiKey, instanceName;
 
-if (localStorage.accountKey) {
-	$('#account-key').val(localStorage.accountKey);
+if (localStorage.apiKey) {
+	$('#api-key').val(localStorage.apiKey);
 }
 if (localStorage.instanceName) {
 	$('#instance-name').val(localStorage.instanceName);
 }
 
-if (localStorage.accountKey && localStorage.instanceName) {
+if (localStorage.apiKey && localStorage.instanceName) {
 	connectAccount();
 }
 
@@ -20,13 +20,13 @@ $('#link-account').on('click', function() {
 });
 
 function connectAccount() {
-	accountKey = $('#account-key').val() || localStorage.accountKey;
+	apiKey = $('#api-key').val() || localStorage.apiKey;
 	instanceName = $('#instance-name').val() || localStorage.instanceName;
 
-	if (accountKey && instanceName) {
-		connection = new Syncano({accountKey: accountKey});
-		$('#account-message').text('Account succesfully linked!');
-		localStorage.accountKey = accountKey;
+	if (apiKey && instanceName) {
+		connection = new Syncano({apiKey: apiKey});
+		$('#account-message').text('Account successfully linked!');
+		localStorage.apiKey = apiKey;
 		localStorage.instanceName = instanceName;
 	} else {
 		$('#account-message').text('Not enough information to link your account. Please try again.');
