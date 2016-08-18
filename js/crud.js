@@ -18,7 +18,7 @@ function getLinks() {
 	connection.DataObject.please()
 		.list({instanceName: localStorage.instanceName, className: "news_item"}).orderBy("upvotes").then(function(links) {
 			links.forEach(function(link) {
-				$('.links').prepend("<li><i class='material-icons upvote' id='"+link.id+"'>arrow_upward</i><a href='"+link.url+"'>"+link.title+"</a>"+" ("+link.upvotes+")</li>")
+				$('.links').prepend("<li><div class='arrow upvote' id='"+link.id+"'></div><a href='"+link.url+"'>"+link.title+"</a>"+" ("+link.upvotes+")</li>")
 			});	
 			$('.upvote').on('click', function() {
 				upvote(this.id);
