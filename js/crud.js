@@ -1,5 +1,7 @@
 $(document).ready(function() {
-	getLinks();
+	if (apiKey && instanceName) {
+		getLinks();	
+	}
 });
 
 $('#add-link').on('click', function() {
@@ -30,14 +32,14 @@ function getLinks() {
 }
 
 function upvote(id) {
-	let query = {id: id, instanceName: localStorage.instanceName, className: "news_item"};
+	var query = {id: id, instanceName: localStorage.instanceName, className: "news_item"};
 	connection.DataObject.please().update(query, {upvotes: {_increment: 1}}).then(function(link) {
 		getLinks();
 	});
 }
 
 function addLink() {
-	let link = {title: $("#link-title").val(), url: $('#link-url').val(), upvotes: 0, instanceName: localStorage.instanceName, className: "news_item"};
+	var link = {title: $("#link-title").val(), url: $('#link-url').val(), upvotes: 0, instanceName: localStorage.instanceName, className: "news_item"};
 	connection.DataObject.please().create(link).then(function(link) {
 		getLinks();
 		$('#link-modal').closeModal();
