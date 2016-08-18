@@ -28,6 +28,7 @@ function connectAccount() {
 		$('#account-message').text('Account successfully linked!');
 		localStorage.apiKey = apiKey;
 		localStorage.instanceName = instanceName;
+		getLinks();
 	} else {
 		$('#account-message').text('Not enough information to link your account. Please try again.');
 	}
