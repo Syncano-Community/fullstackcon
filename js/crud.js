@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	if (apiKey && instanceName) {
-		getLinks();	
+		getLinks();
 	}
 });
 
@@ -26,7 +26,7 @@ function getLinks() {
 	})
 	.catch(function(error) {
 		if (error.status === 404) {
-			$('.links').prepend('<p>No news items available.</p>');
+			$('.links').prepend('<p style="text-align:center;">No news items available.</p>');
 		}
 	});
 }

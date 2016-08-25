@@ -38,18 +38,27 @@
       </nav>
     <!-- </div> -->
       <div class="content">
+        <div id="noUserInfo" style="text-align:center;padding-top:5em;display:none;">
+          <h5 style="margin-bottom:0;">
+            In order to browse or create news items,<br>
+            you must first link your account.
+          </h5>
+          <h5 style="margin-bottom:0;"><a href="http://docs.syncano.io/docs/quick-start-tutorial" target="_blank">Follow the setup guide here</a></h5>
+        </div>
         <ol class="links"></ol>
             
             <!-- Modals -->
             <div class="modal" id="account-modal">
               <div class="modal-content user-input">
                 <h4 class="center">Link your Syncano Account</h4>
+                <p id="account-message"></p>
                 <label>API Key</label>
                 <input type="text" id="api-key" /></br>
                 <label>Instance Name</label>
                 <input type="text" id="instance-name" /></br>
-                <input type="submit" id="account-submit" />
-                <p id="account-message"></p>
+                <div style="text-align: center;">
+                  <input type="submit" id="account-submit" class="button" />
+                </div>
               </div>
               <script src="js/account.js"></script>
             </div>
@@ -61,7 +70,9 @@
                 <input type="text" id="link-title" /></br>
                 <label>URL</label>
                 <input type="text" id="link-url" /></br>
-                <input type="submit" id="link-submit"/>
+                <div style="text-align: center;">
+                  <input type="submit" id="link-submit" class="button"/>
+                </div>
               </div>   
               <script src="js/crud.js"></script>
             </div>
@@ -71,7 +82,10 @@
     </div>
     <footer>
       <div class="container">
-        <p class="center-align">Need help? Join the <a href="http://syncano-community.github.io/slack-invite/" target="_blank">Syncano Community Slack Channel</a></p>
+        <p class="center-align">
+          <a href="http://docs.syncano.io/docs/quick-start-tutorial" target="_blank">Click here for the Quick Start Guide</a><br>
+          Need help? Join the <a href="http://syncano-community.github.io/slack-invite/" target="_blank">Syncano Community Slack Channel</a>
+        </p>
       </div>
     </footer>
 
