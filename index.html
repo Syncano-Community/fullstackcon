@@ -24,9 +24,10 @@
     <script src="https://cdn.jsdelivr.net/syncanojs/1.0.3/syncano.min.js"></script>
   </head>
   <body>
-    <div class="navbar-fixed">
+    <div class="syncano-container">
+    <!-- <div class="navbar-fixed"> -->
       <nav>
-        <div class="nav-wrapper">
+        <div class="nav-wrapper syncano-nav">
           <a class="brand-logo"><img id="syncanoLogo" src="images/syncano-logo-white.png"></a>
           <ul class="right hide-on-med-and-down">
             <li id="navTitle">Syncano News</li>
@@ -35,40 +36,39 @@
           </ul>
         </div>
       </nav>
-    </div>
-
-    <div class="content">
-      <ol class="links"></ol>
-          
-          <!-- Modals -->
-          <div class="modal" id="account-modal">
-            <div class="modal-content user-input">
-              <h4 class="center">Link your Syncano Account</h4>
-              <label>API Key</label>
-              <input type="text" id="api-key" /></br>
-              <label>Instance Name</label>
-              <input type="text" id="instance-name" /></br>
-              <input type="submit" id="account-submit" />
-              <p id="account-message"></p>
+    <!-- </div> -->
+      <div class="content">
+        <ol class="links"></ol>
+            
+            <!-- Modals -->
+            <div class="modal" id="account-modal">
+              <div class="modal-content user-input">
+                <h4 class="center">Link your Syncano Account</h4>
+                <label>API Key</label>
+                <input type="text" id="api-key" /></br>
+                <label>Instance Name</label>
+                <input type="text" id="instance-name" /></br>
+                <input type="submit" id="account-submit" />
+                <p id="account-message"></p>
+              </div>
+              <script src="js/account.js"></script>
             </div>
-            <script src="js/account.js"></script>
-          </div>
 
-          <div class="modal" id="link-modal">
-            <div class="user-input">
-              <h4>Add a News Item</h4>
-              <label>Title</label>
-              <input type="text" id="link-title" /></br>
-              <label>URL</label>
-              <input type="text" id="link-url" /></br>
-              <input type="submit" id="link-submit"/>
-            </div>   
-            <script src="js/crud.js"></script>
-          </div>
-          <!--  End Modals        -->
-  
+            <div class="modal" id="link-modal">
+              <div class="user-input">
+                <h4>Add a News Item</h4>
+                <label>Title</label>
+                <input type="text" id="link-title" /></br>
+                <label>URL</label>
+                <input type="text" id="link-url" /></br>
+                <input type="submit" id="link-submit"/>
+              </div>   
+              <script src="js/crud.js"></script>
+            </div>
+            <!--  End Modals        -->
+    
+      </div>
     </div>
-
     <footer>
       <div class="container">
         <p class="center-align">Need help? Join the <a href="http://syncano-community.github.io/slack-invite/" target="_blank">Syncano Community Slack Channel</a></p>

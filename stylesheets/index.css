@@ -1,4 +1,9 @@
 /* General */
+body {
+  font-family: Verdana, Geneva, sans-serif;
+  color: black;
+}
+
 h1, h2, h3, h4, h5, h6 {
   padding: 0.5em 1em 0.5em 1em;
 }
@@ -7,10 +12,15 @@ ol li {
   padding-right: 2em;
 }
 
+.syncano-container {
+  margin: 5px 7.5%;
+  background-color: #f6f6ef;
+}
+
 /* Header */
 #syncanoLogo {
   padding: 0.2em 1em 0 1em;
-  max-height: 1em;
+  max-height: 58px;
 }
 
 #navTitle {
@@ -19,6 +29,7 @@ ol li {
 }
 
 .nav-wrapper {
+  width: 100%;
   /*background-color: rgb(91,142,221);*/
   background-color: rgb(52,71,112);
 }
@@ -53,4 +64,21 @@ ol li {
   font-size: 16px;
   margin: 0px 5px;
   cursor: pointer;
+}
+
+.arrow {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 0px;
+  margin: 3px 2px 1px;
+  background: url(https://news.ycombinator.com/grayarrow.gif) no-repeat;
+}
+
+ol {
+  color: gray;
+}
+
+.links li a  {
+  color: black;
 }
