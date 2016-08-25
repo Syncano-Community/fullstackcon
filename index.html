@@ -51,12 +51,14 @@
             <div class="modal" id="account-modal">
               <div class="modal-content user-input">
                 <h4 class="center">Link your Syncano Account</h4>
+                <p id="account-message"></p>
                 <label>API Key</label>
                 <input type="text" id="api-key" /></br>
                 <label>Instance Name</label>
                 <input type="text" id="instance-name" /></br>
-                <input type="submit" id="account-submit" />
-                <p id="account-message"></p>
+                <div style="text-align: center;">
+                  <input type="submit" id="account-submit" class="button" />
+                </div>
               </div>
               <script src="js/account.js"></script>
             </div>
@@ -68,7 +70,9 @@
                 <input type="text" id="link-title" /></br>
                 <label>URL</label>
                 <input type="text" id="link-url" /></br>
-                <input type="submit" id="link-submit"/>
+                <div style="text-align: center;">
+                  <input type="submit" id="link-submit" class="button"/>
+                </div>
               </div>   
               <script src="js/crud.js"></script>
             </div>

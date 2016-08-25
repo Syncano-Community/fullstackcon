@@ -29,10 +29,12 @@ function connectAccount() {
 	if (apiKey && instanceName) {
 		$noUserInfo.hide();
 		connection = new Syncano({apiKey: apiKey});
+		$('#account-message').css('color', 'green');
 		$('#account-message').text('Account successfully linked!');
 		localStorage.apiKey = apiKey;
 		localStorage.instanceName = instanceName;
 	} else {
+		$('#account-message').css('color', 'red');
 		$('#account-message').text('Not enough information to link your account. Please try again.');
 	}
 };
