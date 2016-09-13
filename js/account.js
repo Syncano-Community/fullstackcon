@@ -37,5 +37,5 @@ function connectAccount() {
 		$('#account-message').css('color', 'red');
 		$('#account-message').text('Not enough information to link your account. Please try again.');
 	}
-};
+}
 
