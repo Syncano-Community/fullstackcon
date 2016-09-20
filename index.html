@@ -4,28 +4,15 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Syncano News</title>
-
-
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
     <!-- Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- JQuery -->
-    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
-    
     <link rel="stylesheet" href="stylesheets/index.css">
-
-    <!-- Syncano -->
-    <script src="https://cdn.jsdelivr.net/syncano/1.0.25/syncano.min.js"></script>
   </head>
   <body>
     <div class="syncano-container">
-    <!-- <div class="navbar-fixed"> -->
       <nav>
         <div class="nav-wrapper syncano-nav">
           <a class="brand-logo"><img id="syncanoLogo" src="images/syncano-logo-white.png"></a>
@@ -36,7 +23,6 @@
           </ul>
         </div>
       </nav>
-    <!-- </div> -->
       <div class="content">
         <div id="noUserInfo" style="text-align:center;padding-top:5em;display:none;">
           <h5 style="margin-bottom:0;">
@@ -46,38 +32,37 @@
           <h5 style="margin-bottom:0;"><a href="http://docs.syncano.io/docs/quick-start-tutorial" target="_blank">Follow the setup guide here</a></h5>
         </div>
         <ol class="links"></ol>
-            
             <!-- Modals -->
             <div class="modal" id="account-modal">
               <div class="modal-content user-input">
                 <h4 class="center">Link your Syncano Account</h4>
                 <p id="account-message"></p>
-                <label>API Key</label>
-                <input type="text" id="api-key" /></br>
-                <label>Instance Name</label>
-                <input type="text" id="instance-name" /></br>
-                <div style="text-align: center;">
-                  <input type="submit" id="account-submit" class="button" />
-                </div>
+                <form>
+                  <label>API Key</label>
+                  <input type="text" id="api-key" required /></br>
+                  <label>Instance Name</label>
+                  <input type="text" id="instance-name" required /></br>
+                  <div style="text-align: center;">
+                    <input type="submit" id="account-submit" class="button" />
+                  </div>
+                </form>
               </div>
-              <script src="js/account.js"></script>
             </div>
-
             <div class="modal" id="link-modal">
               <div class="user-input">
                 <h4>Add a News Item</h4>
-                <label>Title</label>
-                <input type="text" id="link-title" /></br>
-                <label>URL</label>
-                <input type="text" id="link-url" /></br>
-                <div style="text-align: center;">
-                  <input type="submit" id="link-submit" class="button"/>
-                </div>
-              </div>   
-              <script src="js/crud.js"></script>
+                <form>
+                  <label>Title</label>
+                  <input type="text" id="link-title" required /></br>
+                  <label>URL</label>
+                  <input type="text" id="link-url" required /></br>
+                  <div style="text-align: center;">
+                    <input type="submit" id="link-submit" class="button"/>
+                  </div>
+                </form>
+              </div>
             </div>
             <!--  End Modals        -->
-    
       </div>
     </div>
     <footer>
@@ -88,6 +73,13 @@
         </p>
       </div>
     </footer>
-
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+    <!-- Syncano -->
+    <script src="https://cdn.jsdelivr.net/syncano/1.0.25/syncano.min.js"></script>
+    <!-- App -->
+    <script src="js/app.js"></script>
   </body>
 </html>
