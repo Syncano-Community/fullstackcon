@@ -2,7 +2,7 @@ $(function() {
 
   // variable declarations
 
-  var instanceName = null
+  var instanceName = null;
   var apiKey = null;
   var connection = null;
   var $instanceName = $('#instance-name');
@@ -13,7 +13,6 @@ $(function() {
   var $linkModal = $('#link-modal');
   var $linkAccount = $('#link-account');
   var $addLink = $('#add-link');
-  var $linkModal = $('#link-modal');
   var $links = $('.links');
   var $linkTitle = $('#link-title');
   var $linkUrl = $('#link-url');
@@ -51,7 +50,7 @@ $(function() {
       title: $linkTitle.val(),
       url: $linkUrl.val(),
       upvotes: 0
-    }
+    };
     addLink(link);
   });
 
@@ -91,7 +90,6 @@ $(function() {
     connection = Syncano({ apiKey: apiKey, defaults: { instanceName: instanceName, className: 'news_item' }});
     $noUserInfo.hide();
     $accountMessage.css('color', 'green').text('Account successfully linked!');
-    $linkAccount.hide();
     localStorage.apiKey = apiKey;
     localStorage.instanceName = instanceName;
     getLinks();
